@@ -254,7 +254,6 @@
         <div class="reviews_form">
             <h3 class="reviews_form__title">Deixe sua avaliação</h3>
             <form action="{{route('review.submit')}}" method="POST">
-                @csrf
                 <div class="reviews_form__group">
                     <label for="reviewFormName" data-i18n="reviewsFormName">Seu Nome</label>
                     <input type="text" id="reviewsName" name="reviewName" required>
@@ -309,7 +308,7 @@
     <section class="registration" id="registration">
         <h2 class="registration_title">Cadastre-se e Receba Nossas Ofertas!</h2>
         <div class="registration_container">
-            <form action="{{route('customer.register')}}" method="POST">@csrf
+            <form action="{{route('customer.register')}}" method="POST">
                 <div class="registration_group">
                     <label for="name" data-i18n="registrationName">Nome Completo</label>
                     <input type="text" id="name" name="name" required>
